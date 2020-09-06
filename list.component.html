@@ -1,0 +1,38 @@
+<div class="container">
+<div class="card">
+  <div class="card-header">
+    {{pageTitle}}
+  </div>
+<div class="card-body">
+    <div class="row">
+     <div class="table-responsive">
+      <table class="table mb-0">
+        <thead>
+          <tr>
+           <th>#</th>
+            <th>User Name</th>
+            <th>User Email</th>
+            <th>User Address</th>
+            <th>User Mobile</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let detail of details">
+            <td>{{detail.id}}</td>
+            <td>{{detail.name}}</td>
+            <td>{{detail.email}}</td>
+             <td>{{detail.mobile}}</td>
+            <td>{{detail.address}}</td>
+            <td>
+              <button class="btn btn-outline-primary btn-sm"
+              [routerLink]="['/update', detail.id]"> Edit
+           </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

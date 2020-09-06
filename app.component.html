@@ -1,0 +1,30 @@
+<!-- <span class="fa fa-spinner spinner"
+      *ngIf="loading"></span> -->
+      <nav class="navbar navbar-expand navbar-light bg-light">
+        <a class="navbar-brand" href="#">{{title}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="add">Add Users</a>
+      </li>
+      <!-- <li class="nav-item active">
+        <a class="nav-link" routerLink="update">Update Resto</a>
+      </li> -->
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="list">Users List</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="register">Register</a>
+      </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="login">Login</a>
+        </li>
+        </ul>
+   </div>
+  </nav>
+<router-outlet></router-outlet>
